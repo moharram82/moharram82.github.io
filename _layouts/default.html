@@ -1,39 +1,47 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Mohammed Moharram (moharram82)</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-  </head>
-  <body>
-    <header>
-      <h1>Mohammed Moharram (moharram82)</h1>
-      <p>Web Designer &amp; Developer</p>
-    </header>
-	
-	<div id="banner">
-        <span id="logo"></span>
-
-        <a href="{{ site.github.repository_url }}" class="button fork"><strong>View On GitHub</strong></a>
+    <head>
+        <meta charset="UTF-8">
+        <title>Mohammed Moharram (moharram82)</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#157878">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
         
-    </div><!-- end banner -->
-	
-	<div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
-	{{ content }}
+        <style>
+            #profile_pic {
+                float: right;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Mohammed Moharram (moharram82)</h1>
+            <p>Web Designer &amp; Developer</p>
+        </header>
 
-      </section>
-      <footer>
-       <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
-      </footer>
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+        <div id="banner">
+            <span id="logo"></span>
+            <a href="{{ site.github.repository_url }}" class="button fork"><strong>View On GitHub</strong></a>
+        </div><!-- end banner -->
+	
+        <div class="wrapper">
+            <nav>
+                <ul></ul>
+            </nav>
+            <section>
+                <div id="profile_pic">
+                    <img src="http://github.com/moharram82/moharram82.github.io/blob/master/_layouts/Profile.jpg" alt="Profile Picture">
+                </div><!-- end of #profile_pic -->
+                
+                {{ content }}
+                
+            </section>
+            <footer>
+                <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+            </footer>
+        </div><!-- end of .wrapper -->
+        <!--[if !IE]><script>fixScale(document);</script><![endif]-->
 
     {% if site.google_analytics %}
       <script type="text/javascript">
@@ -47,5 +55,5 @@
         } catch(err) {}
       </script>
     {% endif %}
-  </body>
+    </body>
 </html>
